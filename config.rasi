@@ -8,6 +8,7 @@ configuration {
     sorting-method: "fzf";
     matching: "regex";
     display-drun: "Applications";
+    display-filebrowser: "Filebrowser";
 /*	location: 0;*/
 /*	yoffset: 0;*/
 /*	xoffset: 0;*/
@@ -61,7 +62,6 @@ configuration {
 /*	display-ssh: ;*/
 /*	display-combi: ;*/
 /*	display-keys: ;*/
-/*	display-filebrowser: ;*/
 /*	kb-primary-paste: "Control+V,Shift+Insert";*/
 /*	kb-secondary-paste: "Control+v,Insert";*/
 /*	kb-clear-line: "Control+w";*/
