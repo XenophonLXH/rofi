@@ -33,7 +33,7 @@
     main-bg: #0c162655;
     main-text: #baba34;
     list-bg: #0d0d0c;
-    dark-bg: #0d0d0c99;
+    dark-bg: #0d0d0cbb;
 }
 element {
     background-color: var(dark-bg);
@@ -112,8 +112,7 @@ mainbox {
 }
 message {
     padding:      1px ;
-    border-color: var(separatorcolor);
-    border:       2px dash 0px 0px ;
+    border: none;
 }
 textbox {
     text-color: var(foreground);
@@ -121,17 +120,17 @@ textbox {
 listview {
     padding:      2px 0px 0px ;
     scrollbar:    true;
-    border-color: var(separatorcolor);
-    spacing:      2px ;
+    spacing:      10px ;
     fixed-height: 0;
-    border:       2px dash 0px 0px ;
+    border: none;
+    width: 10em;
 }
 scrollbar {
-    width:        4px ;
+    width:        0px ;
     padding:      0;
-    handle-width: 8px ;
+    handle-width: 0px ;
     border:       0;
-    handle-color: var(normal-foreground);
+    handle-color: var(main-text);
 }
 sidebar {
     border-color: var(separatorcolor);
@@ -162,12 +161,12 @@ textbox-num-sep {
 inputbar {
     padding:    1px ;
     spacing:    0px ;
-    text-color: var(normal-foreground);
+    text-color: var(main-text);
     children:   [ "prompt","textbox-prompt-colon","entry","num-filtered-rows","textbox-num-sep","num-rows","case-indicator" ];
 }
 case-indicator {
     spacing:    0;
-    text-color: var(normal-foreground);
+    text-color: var(main-text);
 }
 entry {
     text-color:        var(main-text);
@@ -177,12 +176,12 @@ entry {
     placeholder:       "Search....";
 }
 prompt {
-    spacing:    0;
-    text-color: var(normal-foreground);
+    spacing:    10;
+    text-color: var(main-text);
 }
 textbox-prompt-colon {
     margin:     0px 1em 1em 1em ;
     expand:     false;
-    str:        ":";
+    str:        ">";
     text-color: inherit;
 }

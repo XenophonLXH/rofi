@@ -1,5 +1,5 @@
 configuration {
-    modi: "window,run,ssh,drun";
+    modi: "window,run,ssh,drun,filebrowser";
     font: "FiraCode Nerd Font 12";
     show-icons: true;
     terminal: "kitty";
@@ -143,6 +143,7 @@ configuration {
   filebrowser {
       directories-first: true;
       sorting-method:    "name";
+      directory: "/home/xenophon";
   }
 }
 
