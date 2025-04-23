@@ -55,7 +55,7 @@ element normal.urgent {
     text-color:       var(urgent-foreground);
 }
 element normal.active {
-    background-color: var(active-background);
+    background-color: var(selected-active-background);
     text-color:       var(active-foreground);
 }
 element selected.normal {
