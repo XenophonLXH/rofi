@@ -30,10 +30,12 @@
     normal-foreground:           var(foreground);
     alternate-urgent-foreground: var(red);
     alternate-active-foreground: var(blue);
-    main-bg: #0c162655;
+    main-bg: #0c1626dd;
     main-text: #baba34;
+    secondary-text: #f54105;
+    tertiary-text: #40E0D0;
     list-bg: #0d0d0c;
-    dark-bg: #0d0d0cbb;
+    dark-bg: #0d0d0cdd;
 }
 element {
     background-color: var(dark-bg);
@@ -169,9 +171,10 @@ case-indicator {
     text-color: var(main-text);
 }
 entry {
-    text-color:        var(main-text);
+    text-color:        var(secondary-text);
     cursor:            text;
     spacing:           10;
+    font-weight: 900;
     placeholder-color: Gray;
     placeholder:       "Search....";
 }
@@ -183,5 +186,5 @@ textbox-prompt-colon {
     margin:     0px 1em 1em 1em ;
     expand:     false;
     str:        ">";
-    text-color: inherit;
+    text-color: var(tertiary-text);
 }
