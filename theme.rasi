@@ -99,12 +99,12 @@ element-icon {
     border-radius: 10px;
 }
 window {
-    padding:          500px 50em;
+    width: 100%;
     background-color: var(main-bg);
     border:           1;
-    width: 100%;
-    height: 100%;
     border-radius: 10px;
+    height: 100%;
+    padding: 30% 30%;
 }
 mainbox {
     padding: 0;
