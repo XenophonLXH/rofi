@@ -30,7 +30,7 @@
     normal-foreground:           var(foreground);
     alternate-urgent-foreground: var(red);
     alternate-active-foreground: var(blue);
-    main-bg: #0c1626dd;
+    main-bg: #0c162655;
     main-text: #baba34;
     list-bg: #0d0d0c;
     dark-bg: #0d0d0c99;
@@ -57,7 +57,9 @@ element normal.active {
     text-color:       var(active-foreground);
 }
 element selected.normal {
-    background-color: var(selected-normal-background);
+    background-color: var(dark-bg);
+    border: 1;
+    border-color: var(main-text);
     text-color:       var(selected-normal-foreground);
 }
 element selected.urgent {
@@ -97,7 +99,7 @@ element-icon {
     border-radius: 10px;
 }
 window {
-    padding:          500;
+    padding:          500px 50em;
     background-color: var(main-bg);
     border:           1;
     width: 100%;
