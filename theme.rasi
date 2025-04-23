@@ -33,16 +33,19 @@
     main-bg: #0c1626dd;
     main-text: #baba34;
     list-bg: #0d0d0c;
+    dark-bg: #0d0d0c99;
 }
 element {
-    padding: 1px ;
+    background-color: var(dark-bg);
+    padding: 10px ;
     cursor:  pointer;
     spacing: 5px ;
     border:  0;
+    border-radius: 10px;
     children: [ element-icon, element-text ];
 }
 element normal.normal {
-    background-color: var(main-bg);
+    background-color: var(dark-bg);
     text-color:       var(normal-foreground);
 }
 element normal.urgent {
@@ -66,7 +69,7 @@ element selected.active {
     text-color:       var(selected-active-foreground);
 }
 element alternate.normal {
-    background-color: var(main-bg);
+    background-color: var(dark-bg);
     text-color:       var(alternate-normal-foreground);
     border-radius: 10px;
 }
@@ -79,16 +82,19 @@ element alternate.active {
     text-color:       var(alternate-active-foreground);
 }
 element-text {
-    background-color: var(list-bg);
+    background-color: transparent;
     cursor:           pointer;
     highlight:        inherit;
     text-color:       var(main-text);
+    border-radius: 10px;
+    padding: 10px 10px;
 }
 element-icon {
-    background-color: var(list-bg);
+    background-color: transparent;
     size:             2em ;
     cursor:           inherit;
     text-color:       inherit;
+    border-radius: 10px;
 }
 window {
     padding:          500;
